@@ -23,3 +23,9 @@ twbs:bootstrap
 underscore
 iron:router
 sacha:spin
+session
+chuikoff:accounts-ui-bootstrap-4
+service-configuration
+npm-bcrypt
+accounts-password
+accounts-facebook
