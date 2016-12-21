@@ -11,6 +11,30 @@ body {
   background: #eee;
   color: #666666; }
 
+.container{
+  background-image: url(img/bg.jpg);
+  background-position: center;
+  background-size: initial;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.container .btn-Facebook {
+  background-color: #3b5998;
+  border-radius: 100px;
+  color: #fff !important;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 0 auto;
+  padding: 10px;
+  width: 80%;
+}
+
+.loginIn img{
+  width: 220px;
+  margin-bottom: 100px;
+}
+
 #main {
   position: relative;
 }
