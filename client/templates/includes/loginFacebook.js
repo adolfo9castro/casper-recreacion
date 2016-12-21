@@ -5,14 +5,14 @@ Template.loginFacebook.events({
                 throw new Meteor.Error("Ha fallado");
             }
         });
-        console.log("Gola")
     },
 
     'click #logout': function(event) {
         Meteor.logout(function(err){
             if (err) {
-                throw new Meteor.Error("Logout failed");
+                throw new Meteor.Error("salida failed");
             }
         })
     }
 });
+
