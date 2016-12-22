@@ -1,0 +1,7 @@
+{
+  "galaxy.meteor.com": { 
+     "env": { 
+       "MONGO_URL": "mongodb://usercasper:g6tt3nt4g@ds141118.mlab.com:41118/casper" 
+     } 
+   }
+}
