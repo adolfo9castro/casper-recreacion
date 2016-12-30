@@ -3,5 +3,19 @@
      "env": { 
        "MONGO_URL": "mongodb://usercasper:g6tt3nt4g@ds141118.mlab.com:41118/casper" 
      } 
-   }
+   },
+
+   "facebook": {
+    "appId": "1318056228245794",
+    "secret": "992a9a64063afe9c81095eda3ab012a5"
+  },
+  "public": {
+    "facebook": {
+      "permissions": [
+        "public_profile", 
+        "email", 
+        "user_friends"
+      ]
+    }
+  }
 }

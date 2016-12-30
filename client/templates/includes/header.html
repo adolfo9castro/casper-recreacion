@@ -14,14 +14,11 @@
 				
 				{{else}}
 				<img class="img-responsive img-center center-block" src="img/logo.png">
+        
 			{{/if}}
-			<div class="center-block"> 
+			<div class="center-block containerLogin"> 
 				{{> loginFacebook}}
 			</div>
-
-			<ul class="nav navbar-nav">        
-				{{#if currentUser}}<li><a href="{{pathFor 'postSubmit'}}">Nuevo post</a></li>{{/if}}      
-			</ul>
 		</div>
     </div>
   </nav>

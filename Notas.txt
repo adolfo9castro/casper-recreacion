@@ -1,3 +1,0 @@
-Notas
-
-meteor add npm-bcrypt

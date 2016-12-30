@@ -28,4 +28,7 @@ npm-bcrypt
 accounts-password
 accounts-facebook
 audit-argument-checks
+facebook
+#crosswalk
 jquery
+oauth1

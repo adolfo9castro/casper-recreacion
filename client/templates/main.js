@@ -6,7 +6,5 @@ jQuery(document).ready(function($){
 	setTimeout(function() {
 		$(".container").css({"min-height" : altoPantalla+"px"});
 		$(".loginIn").css({"top" : altoPantalla/10 +"px"});
-	}, 80);
-	
-
-})
+	}, 1000);
+});

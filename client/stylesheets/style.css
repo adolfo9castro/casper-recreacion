@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Rancho');
+
 .grid-block, .main, .post, .comments li, .comment-form {
   background: #fff;
   border-radius: 3px;
@@ -26,13 +28,75 @@ body {
   font-size: 1.2em;
   font-weight: 300;
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
+  width: 80%
+}
+
+.containerLogin input{
+  background-color: transparent;
+  border: 3px solid #fff;
+  border-radius: 50px !important;
+  color: #fff;
+  margin: 20px auto !important;
   width: 80%;
+}
+
+.containerLogin input::placeholder{
+  color: #FFF
+}
+
+.containerLogin #login-buttons-password{
+  background-color: #f6ac29;
+  border: medium none;
+  border-radius: 50px;
+  display: inline-block;
+  float: left;
+  font-family: "Rancho";
+  font-size: 25px;
+  margin-left: 9%;
+  padding: 0;
+  width: 34%;
+}
+
+.containerLogin #forgot-password-link{
+  background-color: #f6ac29;
+  border: medium none;
+  border-radius: 50px;
+  color: #fff;
+  display: none;
+  float: left;
+  font-family: "Rancho";
+  font-size: 20px;
+  margin-left: 9%;
+  text-decoration: none;
+  width: 33%;
+}
+
+.containerLogin #signup-link{
+  background-color: #e71f26;
+  border: medium none;
+  border-radius: 50px;
+  color: #fff;
+  float: left;
+  font-family: "Rancho";
+  font-size: 26px;
+  margin-right: 10%;
+  text-align: center;
+  text-decoration: none;
+  width: 45%;
+}
+
+.containerLogin .dropdown-menu .or{
+  display: none !important
 }
 
 .loginIn img{
   width: 220px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+}
+
+.containerLogin input#login-email:before{
+  content: "";
 }
 
 #main {
@@ -52,6 +116,18 @@ body {
 
 #spinner {
   height: 300px; }
+
+.containerLogin .dropdown-menu{
+  display: block;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+}
+
+.containerLogin .dropdown-toggle{
+  display: none;
+}
 
 .post {
   /* For modern browsers */

@@ -1,5 +1,5 @@
 {
-  "name": "casper-recreaciones",
+  "name": "recreaciones",
   "private": true,
   "scripts": {
     "start": "meteor run"
