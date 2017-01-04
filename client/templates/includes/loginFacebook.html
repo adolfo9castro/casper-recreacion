@@ -1,9 +1,18 @@
 <template name="loginFacebook">
     {{#if currentUser}}
-        {{currentUser.services.facebook.first_name}}
-         
-        <img src="http://graph.facebook.com/{{currentUser.services.facebook.id}}/picture/?type=large">         
-        <button id="logout" class="login-buttons-logout login-button btn">Salir</button>
+        <div class="col-xs-12 col-sm-12 col-md-12 header">
+            <div class="col-xs-3 col-sm-3 col-md-3">
+                <img src="http://graph.facebook.com/{{currentUser.services.facebook.id}}/picture/?type=large">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8">
+                <h2>Casper Recreación</h2>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+                 
+        <!--<button id="logout" class="login-buttons-logout login-button btn">Salir</button>-->
     {{else}}
         <button id="facebook-login" class="login-button btn btn-block btn-Facebook">Ingresar con <strong>Facebook</strong></button>
 

@@ -5,6 +5,11 @@ jQuery(document).ready(function($){
 	
 	setTimeout(function() {
 		$(".container").css({"min-height" : altoPantalla+"px"});
-		$(".loginIn").css({"top" : altoPantalla/10 +"px"});
 	}, 1000);
+
+	setTimeout(function() {
+		$("#containerAlto #main").css({"min-height" : altoPantalla+"px"});
+		$("#containerAlto #main").css({"background-color" : "#FFF"});
+	}, 1500);
+	
 });
