@@ -1,9 +1,5 @@
 Meteor.subscribe("userData");
 
-var googlefonts = require("googlefonts").googlefonts;
-
-console.log(googlefonts)
-
 jQuery(document).ready(function($){
 	var altoPantalla = $(window).height();
 	
@@ -14,6 +10,6 @@ jQuery(document).ready(function($){
 	setTimeout(function() {
 		$("#containerAlto #main").css({"min-height" : altoPantalla+"px"});
 		$("#containerAlto #main").css({"background-color" : "#FFF"});
-	}, 1500);
+	}, 2000);
 	
 });

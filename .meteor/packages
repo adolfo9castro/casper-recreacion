@@ -22,7 +22,6 @@ underscore
 iron:router
 sacha:spin
 session
-chuikoff:accounts-ui-bootstrap-4
 service-configuration
 npm-bcrypt
 accounts-password
@@ -31,6 +30,5 @@ audit-argument-checks
 facebook
 #crosswalk
 jquery
-oauth2
+oauth1
 fortawesome:fontawesome
-udondan:googlefonts
