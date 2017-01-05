@@ -11,9 +11,9 @@ App.accessRule('https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js', {
 
 App.info({
   id: 'com.smarttree.recreacion.desarrollo',
-  name: 'Recreación',
-  version: '0.0.2',
-  description: 'Recreación casper al alcance de sus clientes',
+  name: 'Casper',
+  version: '0.0.3',
+  description: 'Casper recreación al alcance de sus clientes',
   author: 'Smarttree',
   email: 'desarrollo@smarttree.co',
   website: 'http://smarttree.co'
