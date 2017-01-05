@@ -31,5 +31,6 @@ audit-argument-checks
 facebook
 #crosswalk
 jquery
-oauth1
+oauth2
 fortawesome:fontawesome
+udondan:googlefonts

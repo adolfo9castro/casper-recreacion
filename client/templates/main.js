@@ -1,5 +1,9 @@
 Meteor.subscribe("userData");
 
+var googlefonts = require("googlefonts").googlefonts;
+
+console.log(googlefonts)
+
 jQuery(document).ready(function($){
 	var altoPantalla = $(window).height();
 	
