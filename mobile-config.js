@@ -1,3 +1,14 @@
+App.accessRule('http://*');
+App.accessRule('https://*');
+App.accessRule('*');
+App.accessRule('https://*.googleapis.com/*');
+App.accessRule('https://*.google.com/*');
+App.accessRule('https://*.gstatic.com/*');
+App.accessRule('https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js', {
+  'minimum-tls-version': 'TLSv1.0',
+  'requires-forward-secrecy': false,
+});
+
 App.info({
   id: 'com.smarttree.recreacion.desarrollo',
   name: 'Recreación',
@@ -36,3 +47,9 @@ App.configurePlugin('com.phonegap.plugins.facebookconnect', {
   API_KEY: '992a9a64063afe9c81095eda3ab012a5',
   APP_NAME: 'casper-recreacion'
 });
+
+App.appendToConfig(`
+  <universal-links>
+    <host name="https://casperrecreacion.meteorapp.com/" />
+  </universal-links>
+`);
