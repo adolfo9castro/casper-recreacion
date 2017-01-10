@@ -25,70 +25,10 @@
 					<h4>Noticias</h4>
 				</li>
 			</ul>
-			<button id="btnSend" class="btn btn-primary btn-lg btn-block" onclick="btnSend()">
+			<button id="btnSend" class="btn btn-primary btn-lg btn-block">
 				<i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
 			</button>
 
-			<script type="text/javascript">
-				$("button#btnSend").on("click", function(){
-					$(".contactForm").fadeIn()
-				});
-			</script>
-
-			<!--TODO-->
-				<div class="contactForm">
-			<span class="salir" data-toggle='tooltip' data-placement='bottom' title='Cerrar formulario'><i class="fa fa-times" aria-hidden="true"></i></span>
-			<section class="col-xs-12 col-md-12">
-				<section class="well form-horizontal" id="contact_form">
-					
-					<legend>Te asesoramos sin ningún compromiso, contáctanos.</legend>
-					
-					<div class="form-group">
-						<label class="col-md-2 control-label">Nombre completo</label>  
-						<div class="col-md-10 inputGroupContainer">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>								
-								<input type="text" name="nombre" placeholder="Nombre completo" class="form-control">
-							</div>
-						</div>
-					</div>
-
-					
-					<div class="form-group">
-						<label class="col-md-2 control-label">Correo electrónico</label>  
-						<div class="col-md-10 inputGroupContainer">
-							<div class="input-group">
-							    <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>								
-								<input type="text" name="email" class="form-control" placeholder="Correo electrónico">
-							</div>
-						</div>
-					</div>	
-
-					<div class="form-group">
-						<label class="col-md-2 control-label">Número telefónico</label>  
-						<div class="col-md-10 inputGroupContainer">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
-								<input name="telefono" placeholder="Teléfono de contacto" class="form-control" type="text">
-							</div>
-						</div>
-					</div>				
-					
-					
-					<div class="form-group">
-						<label class="col-md-2 control-label"></label>
-						<div class="col-md-10">
-							<button id="enviarCorreo" type="submit" class="btn btn-warning" >Enviar <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-						</div>
-					</div>
-
-					<div id="succes"></div>
-
-				</section>
-			</section>
-		</div>
-			<!--TODO-->
-			
 		</div>
 	{{/if}}
     
