@@ -1,7 +1,10 @@
 <template name="layout">
+  <div class="loaderContent">
+    <div class="loader"></div>
+  </div>
   <div class="container" id="containerAlto">
     {{> header}}
-    
+
 	{{#if currentUser}}
 		<div id="main" class="row ">
 			<ul class="menu col-xs-12 col-md-12">
@@ -31,6 +34,6 @@
 
 		</div>
 	{{/if}}
-    
+
   </div>
 </template>
