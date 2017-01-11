@@ -11,8 +11,8 @@ App.accessRule('https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js', {
 
 App.info({
   id: 'com.smarttree.recreacion.desarrollo',
-  name: 'Casper',
-  version: '0.0.4',
+  name: 'Casper recreación',
+  version: '0.0.5',
   description: 'Casper recreación al alcance de sus clientes',
   author: 'Smarttree',
   email: 'desarrollo@smarttree.co',
@@ -22,7 +22,7 @@ App.info({
 App.icons({
   'android_mdpi': 'recursos/android_mdpi.icon.png',
   'android_hdpi': 'recursos/android_hdpi.icon.png',
-  'android_xhdpi': 'recursos/android_xhdpi.icon.png',  
+  'android_xhdpi': 'recursos/android_xhdpi.icon.png',
   'android_xxhdpi': 'recursos/android_xxhdpi.icon.png',
   'android_xxxhdpi': 'recursos/android_xxxhdpi.icon.png'
 });
