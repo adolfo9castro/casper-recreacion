@@ -12,7 +12,7 @@ App.accessRule('https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js', {
 App.info({
   id: 'com.smarttree.recreacion.desarrollo',
   name: 'Casper recreación',
-  version: '0.0.5',
+  version: '0.0.7',
   description: 'Casper recreación al alcance de sus clientes',
   author: 'Smarttree',
   email: 'desarrollo@smarttree.co',
@@ -50,6 +50,6 @@ App.configurePlugin('com.phonegap.plugins.facebookconnect', {
 
 App.appendToConfig(`
   <universal-links>
-    <host name="https://casperrecreacion.meteorapp.com/" />
+    <host name="https://casper-recreacion.herokuapp.com/  " />
   </universal-links>
 `);

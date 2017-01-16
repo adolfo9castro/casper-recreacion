@@ -4,36 +4,9 @@
   </div>
   <div class="container" id="containerAlto">
     {{> header}}
-
-	{{#if currentUser}}
-		<div id="main" class="row ">
-			<ul class="menu col-xs-12 col-md-12">
-				<li class="col-xs-3 col-sm-3 col-md-3">
-					<span class="fa-stack fa-lg">
-						<i class="fa fa-map-o fa-stack-2x"></i>
-						<i class="fa fa-map-marker fa-stack-1x"></i>
-					</span>
-					<h4>Geolocalización</h4>
-				</li>
-				<li class="col-xs-3 col-sm-3 col-md-3">
-					<i class="fa fa-child" aria-hidden="true"></i>
-					<h4>Recreacionistas</h4>
-				</li>
-				<li class="col-xs-3 col-sm-3 col-md-3">
-					<i class="fa fa-users" aria-hidden="true"></i>
-					<h4>Club de amigos</h4>
-				</li>
-				<li class="col-xs-3 col-sm-3 col-md-3">
-					<i class="fa fa-newspaper-o" aria-hidden="true"></i>
-					<h4>Noticias</h4>
-				</li>
-			</ul>
-			<button id="btnSend" class="btn btn-primary btn-lg btn-block">
-				<i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
-			</button>
-
-		</div>
-	{{/if}}
-
+    {{> yield}}
+    {{#if currentUser}}
+  	 {{> menuInvited}}
+  	{{/if}}
   </div>
 </template>

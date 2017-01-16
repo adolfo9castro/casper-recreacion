@@ -20,7 +20,7 @@ shell-server@0.2.1            # Server-side component of the `meteor shell` comm
 twbs:bootstrap
 underscore
 iron:router
-sacha:spin
+2sacha:spin
 session
 service-configuration
 npm-bcrypt
@@ -28,7 +28,7 @@ accounts-password
 accounts-facebook
 audit-argument-checks
 facebook
-#crosswalk
+crosswalk
 jquery
 oauth1
 fortawesome:fontawesome
