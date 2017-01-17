@@ -13,7 +13,7 @@ App.info({
   id: 'com.smarttree.recreacion.desarrollo',
   name: 'Casper recreación',
   version: '0.0.7',
-  description: 'Casper recreación al alcance de sus clientes',
+  description: 'Todo un mundo de diversión',
   author: 'Smarttree',
   email: 'desarrollo@smarttree.co',
   website: 'http://smarttree.co'
