@@ -20,7 +20,8 @@ shell-server@0.2.1            # Server-side component of the `meteor shell` comm
 twbs:bootstrap
 underscore
 iron:router
-2sacha:spin
+#sacha:spin
+#2sacha:spin
 session
 service-configuration
 npm-bcrypt
