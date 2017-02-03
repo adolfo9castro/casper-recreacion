@@ -13,6 +13,21 @@ body {
   font-family: "PT Sans";
 }
 
+.containerBodyApp{
+  position: relative;
+  width: 100%;
+  z-index: 8
+}
+
+#map {
+    height: 800px;
+}
+
+.recreacionistas, .noticias, .amiguitos{
+  margin-top: 100px;
+  display: none
+}
+
 .container{
   background-image: url(img/bg.jpg);
   background-position: center;

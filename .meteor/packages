@@ -29,7 +29,7 @@ accounts-password
 accounts-facebook
 audit-argument-checks
 facebook
-crosswalk
+#crosswalk
 jquery
 oauth1
 fortawesome:fontawesome

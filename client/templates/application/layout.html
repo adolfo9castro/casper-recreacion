@@ -4,9 +4,10 @@
   </div>
   <div class="container" id="containerAlto">
     {{> header}}
-    {{> yield}}
+
     {{#if currentUser}}
-  	 {{> menuInvited}}
+      {{> bodyApp}}
+      {{> menuInvited}}
   	{{/if}}
   </div>
 </template>
