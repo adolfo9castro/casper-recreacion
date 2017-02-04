@@ -8,11 +8,12 @@ App.accessRule('https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js', {
   'minimum-tls-version': 'TLSv1.0',
   'requires-forward-secrecy': false,
 });
+App.accessRule('https://maps.googleapis.com');
 
 App.info({
   id: 'com.smarttree.recreacion.desarrollo',
   name: 'Casper recreación',
-  version: '0.0.7',
+  version: '0.0.9',
   description: 'Todo un mundo de diversión',
   author: 'Smarttree',
   email: 'desarrollo@smarttree.co',
