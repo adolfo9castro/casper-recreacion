@@ -1,0 +1,15 @@
+<template name="header">
+  <div class="row">
+    <div class="col-xs-12 col-md-12 loginIn">
+      {{#if currentUser}}
+        {{> menu}}
+      {{else}}
+        <img class="img-responsive img-center center-block" src="img/logo.png">
+      {{/if}}
+      
+      <div class="center-block containerLogin">
+        {{> loginFacebook}}
+      </div>
+    </div>
+  </div>
+</template>

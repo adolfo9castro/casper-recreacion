@@ -1,19 +1,22 @@
 {
-  "galaxy.meteor.com": { 
-     "env": { 
-       "MONGO_URL": "mongodb://usercasper:g6tt3nt4g@ds141118.mlab.com:41118/casper" 
-     } 
-   },
+  "public": {
+    "recordsPerPage" : "5"
+  },
+  "private": {
+    "AWSAccessKeyId" : "AKIAIUZODSQNXZWME6EA",
+    "AWSSecretAccessKey" : "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",
+    "AWSBucket" : "nicks-photo-blog-test"
+  },
 
-   "facebook": {
+  "facebook": {
     "appId": "1318056228245794",
     "secret": "992a9a64063afe9c81095eda3ab012a5"
   },
   "public": {
     "facebook": {
       "permissions": [
-        "public_profile", 
-        "email", 
+        "public_profile",
+        "email",
         "user_friends"
       ]
     }

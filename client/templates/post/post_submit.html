@@ -1,0 +1,43 @@
+<template name="postSubmit">
+  <form class="main form page">
+
+    <div class="form-group {{errorClass 'titulo'}}">
+      <label class="control-label" for="titulo">Título</label>
+      <div class="controls">
+          <input name="titulo" id="titulo" type="text" value="" class="form-control"/>
+          <span class="help-block">{{errorMessage 'titulo'}}</span>
+      </div>
+    </div>
+
+    <div class="form-group {{errorClass 'texto'}}">
+      <label class="control-label" for="imagen">Noticia</label>
+      <div class="controls">
+          <textarea name="texto" class="form-control noticiasContenido" rows="5" id="texto"></textarea>
+          <span class="help-block">{{errorMessage 'texto'}}</span>
+      </div>
+    </div>
+
+    <div class="form-group {{errorClass 'texto'}}">
+      <label class="control-label" for="imagen">Imagen de portada</label>
+      <div class="controls">
+          {{> imageUploadRecreacionistaTemplate}}
+      </div>
+    </div>
+
+    <input type="submit" value="Publicar" class="btn btn-primary"/>
+  </form>
+</template>
+
+
+<template name="imageUploadRecreacionistaTemplate">
+  <input class="your-upload-class" type="file">
+      {{#each imagenUpload}}
+          {{#if isUploaded}}
+            <div class="delImage">
+              <img src="{{url}}" class="m-x-auto text-xs-center center-block" width="200" />
+              <input name="imagen" id="imagen" type="hidden" value="{{url}}" class="form-control"/>
+              <button id="deleteFileButton">delete</button>
+            </div>
+          {{else}}uploading...{{/if}}
+      {{/each}}
+</template>

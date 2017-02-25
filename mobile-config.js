@@ -13,7 +13,7 @@ App.accessRule('https://maps.googleapis.com');
 App.info({
   id: 'com.smarttree.recreacion.desarrollo',
   name: 'Casper recreación',
-  version: '0.0.9',
+  version: '1.0.0',
   description: 'Todo un mundo de diversión',
   author: 'Smarttree',
   email: 'desarrollo@smarttree.co',
