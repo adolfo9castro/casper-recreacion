@@ -33,13 +33,3 @@ Meteor.publish('notifications', function() {
 Meteor.publish("imageUploadPost", function () {
   return ImageUploadPost.find();
 });
-
-//Recreacionistas
-
-Meteor.publish('recreacionistas', function(options) {
-  options, {
-    sort: Object,
-    limit: Number
-  }
-  return Recreacionistas.find({}, options);
-});

@@ -20,7 +20,7 @@
     <div class="form-group {{errorClass 'texto'}}">
       <label class="control-label" for="imagen">Imagen de portada</label>
       <div class="controls">
-          {{> imageUploadRecreacionistaTemplate}}
+          {{> imageUploadPostTemplate}}
       </div>
     </div>
 
@@ -29,7 +29,7 @@
 </template>
 
 
-<template name="imageUploadRecreacionistaTemplate">
+<template name="imageUploadPostTemplate">
   <input class="your-upload-class" type="file">
       {{#each imagenUpload}}
           {{#if isUploaded}}
