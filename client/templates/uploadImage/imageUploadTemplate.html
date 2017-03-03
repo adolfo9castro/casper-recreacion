@@ -1,5 +1,4 @@
 <template name="imageUploadTemplate">
-  <input class="your-upload-class" type="file" >
       {{#each imagenUpload}}
           {{#if isUploaded}}
             <div class="delImage">
@@ -9,4 +8,16 @@
             </div>
           {{else}}<p>Subiendo imagen</p>{{/if}}
       {{/each}}
+</template>
+
+<template name="dropzone">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="dropzone" class="dropzone">
+        <div class="well-drop-zone">
+          <p>Arrastre su imagen acá</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>

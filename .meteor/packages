@@ -44,3 +44,4 @@ teamon:tinymce
 
 cfs:gridfs
 cfs:s3
+raix:ui-dropped-event

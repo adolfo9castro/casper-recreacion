@@ -1,4 +1,4 @@
-Template.layout.onRendered(function() {
+/*Template.layout.onRendered(function() {
   setTimeout(function(){
     $(".loaderContent").fadeOut("slow");
     setTimeout(function(){
@@ -7,3 +7,4 @@ Template.layout.onRendered(function() {
   }, 1000)
 
 });
+*/

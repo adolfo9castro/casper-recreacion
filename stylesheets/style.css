@@ -954,3 +954,11 @@ iframe{
 .textoCompleto p {
   margin: 10px 0!important;
 }
+
+.well-drop-zone{
+  padding-top: 40px 
+}
+
+#deleteFileButton{
+  cursor: pointer;
+}
