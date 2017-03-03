@@ -3,3 +3,14 @@ Template.postPage.helpers({
     return Comments.find({postId: this._id});
   }
 });
+
+Template.postPage.onRendered(function() {
+    $('.textoCompleto').each(function(){
+
+      var texto=$(this).text();
+     
+      $(this).html(texto);
+
+    });
+
+});

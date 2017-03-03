@@ -1,0 +1,12 @@
+<template name="imageUploadTemplate">
+  <input class="your-upload-class" type="file" >
+      {{#each imagenUpload}}
+          {{#if isUploaded}}
+            <div class="delImage">
+              <img src="{{url}}" class="m-x-auto text-xs-center center-block img-responsive" width="200" />
+              <input name="imagen" id="imagen" type="hidden" value="{{url}}" class="form-control"/>
+              <p id="deleteFileButton">Quitar imagen</p>
+            </div>
+          {{else}}<p>Subiendo imagen</p>{{/if}}
+      {{/each}}
+</template>

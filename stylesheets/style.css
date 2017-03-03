@@ -1,3 +1,5 @@
+@import "casper-font/css/casper.css";
+
 .grid-block, .main, .post, .comments li, .comment-form {
   background: #fff;
   border-radius: 3px;
@@ -443,7 +445,8 @@ TODO
 }
 
 .noticiasContenido{
-  resize: vertical;
+    resize: none!important;
+    height: 500px!important;
 }
 
 /*Menu push*/
@@ -645,7 +648,7 @@ ul.noticias li.post .post-content h3{
 }
 
 ul.noticias li.post .post-content p{
-  margin: 15px 0 0 15px
+  margin: 15px 0 0 5px
 }
 
 ul.noticias li.post .post-content a{
@@ -705,4 +708,249 @@ ul.noticias li.post:nth-last-child(4n-1){
 
 .menu a:active{
   color: #01f8fd
+}
+
+.container-fluid.panelAdmin{
+  padding: 0;
+  background-color: #e3e1e2;
+}
+
+.panelAdmin .menu{
+  background-color: #452a77;
+  height: 100%;
+  display: block;
+  position: fixed;
+  color: #FFF
+}
+
+.panelAdmin .menu img{
+  margin: 20px auto;
+  min-width: 150px;
+  text-align: center;
+  max-width: 200px;
+}
+
+.panelAdmin .barraNotificacion{
+  background-color: #452a77;
+  height: 70px;
+  position: fixed;
+  color: #FFF;
+  z-index: 99;
+}
+
+.panelAdmin .stContent{
+  padding: 0;
+  margin-left: 16.66666667%;
+  position: relative;
+}
+
+.panelAdmin .menu ul li{
+  font-weight: bold;
+  font-size: 2rem;
+  color: #FFF;
+  padding: 5px 0;
+}
+
+.panelAdmin .menu ul li i{
+  font-size: 1.7rem;
+  margin-right: 10px 
+}
+
+.panelAdmin .menu ul li i:before {
+  position: relative;
+  top: 10px;
+  font-size: 32px;
+}
+
+.barraNotificacion ul.notificaciones{
+  font-size: 2rem;
+  color: #FFF;
+  padding: 15px;
+  width: 50%;
+  font-weight: bold;
+}
+
+.barraNotificacion ul.notificaciones i{
+  font-size: 3rem;
+  margin: 0 6px 0 0;
+  top: 8px;
+  position: relative;
+}
+
+.barraNotificacion ul.notificaciones span{
+  background-color: #FFF;
+  color: #452a77;
+  font-size: 1.4rem;
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  padding: 0 10px;
+  margin: 0 6px;
+  position: relative;
+  top: -3px;
+}
+
+.barraNotificacion ul.usuarios{
+  text-align: center;
+  padding: 5px 20px 5px 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.barraNotificacion ul.usuarios img{
+  border-radius: 100%;
+}
+
+.barraNotificacion ul.usuarios span{
+  margin: 0 20px;
+}
+
+.barraNotificacion ul.usuarios i{
+  font-size: 3rem;
+  top: 10px;
+  position: relative;
+}
+
+.stContent .contenido .texto, .stContent .contenido .titulo{
+  margin: 20px;
+  background-color: #FFF;
+  padding: 20px
+}
+
+.stContent .contenido .titulo label,
+.stContent .opciones .publicar h4, 
+.stContent .opciones .imagen h4{
+  font-size: 2.3rem;
+  color: #000;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.stContent .contenido .titulo input[type="text"],
+.stContent .contenido .titulo input[type="text"]:active,
+.stContent .contenido .titulo input[type="text"]:checked,
+.stContent .contenido .titulo input[type="text"]:focus,
+.stContent .contenido .titulo input[type="text"]:enabled,
+.stContent .contenido .titulo input[type="text"]:disabled{
+  border-radius: 0;
+  height: 40px;
+  box-shadow: none;
+  border: 1px solid #ccc
+}
+
+.stContent .opciones .publicar, .stContent .opciones .imagen{
+  background-color: #FFF;
+  margin: 20px 20px 0 -30px;
+  padding: 20px;
+}
+
+.stContent .opciones .publicar ul{
+  margin: 20px 0;
+}
+
+.stContent .opciones .publicar ul li{
+  font-weight: normal;
+  font-size: 2rem;
+  color: #686868;
+  padding: 5px 0;
+}
+
+.stContent .opciones .publicar ul li i{
+  color: #000
+}
+
+.stContent .opciones .publicar ul li i.icon-eliminar{
+  color: red
+}
+
+.stContent .opciones .publicar input.publicar{
+  margin: 0 auto;
+  display: block;
+  background-color: #4c257a;
+  border-radius: 50px;
+  width: 120px;
+  color: #FFF;
+  font-family: "Rancho";
+  padding: 3px;
+  font-size: 2.3rem;
+}
+
+.stContent .opciones .imagen .contenedorImagen{
+  border: 2px dotted #afafaf;
+  display: block;
+  height: auto;
+  margin: 10px auto;
+  width: 100%;
+  min-height: 120px
+}
+
+.stContent .opciones .imagen p{
+  width: 100%;
+  color: #afafaf;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.creditos{
+  position: relative;
+  right: 0;
+  bottom: 0;
+  cursor: default;
+  transition: all 0.5s ease 0.1s;
+  text-align: right;
+  padding-right: 0;
+  width: 50%;
+}
+
+.creditos i{
+  font-size: 9rem;
+  transition: all 0.5s ease 0.1s;
+  position: absolute;
+  top: -42px;
+  margin: 0 0 0 5px;
+}
+
+.creditos i:hover{
+  color: #000
+}
+
+.row.yield{
+  margin: 80px 0 0 0;
+  padding: 0
+}
+
+.opciones .imagen input[type="file"].contenedorImagen,
+.opciones .imagen input[type="file"].contenedorImagen:checked,
+.opciones .imagen input[type="file"].contenedorImagen:focus,
+.opciones .imagen input[type="file"].contenedorImagen:enabled,
+.opciones .imagen input[type="file"].contenedorImagen:disabled{
+  box-shadow: none;
+  border: 2px dotted #afafaf;
+}
+
+.noticia.post-page.page.textoFinal .textoCompleto a,
+.noticia.post-page.page.textoFinal p,
+.noticia.post-page.page.textoFinal span,
+.noticia.post-page.page.textoFinal div,
+.noticia.post-page.page.textoFinal strong{
+  margin: 0;
+  padding: 0;
+  float: none;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.noticia.post-page.page.textoFinal div{
+  margin: 10px 0
+}
+
+iframe{
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.textoCompleto p {
+  margin: 10px 0!important;
 }
