@@ -795,6 +795,7 @@ ul.noticias li.post:nth-last-child(4n-1){
   padding: 5px 20px 5px 0;
   font-size: 2rem;
   font-weight: bold;
+  float: right
 }
 
 .barraNotificacion ul.usuarios img{

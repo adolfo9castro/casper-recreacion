@@ -35,9 +35,10 @@
 
 		this.$body.on('click','.'+_this.classes.overlay, function(){
 			_this.toggleMenu("hide");
+			
 		});
 	}
-
+ 
 	pushMenu.prototype.toggleMenu = function(status){
 		var method = status == "show" ? "addClass" : "removeClass";
 		this.$elem[method](this.classes.open);
