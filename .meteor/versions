@@ -115,7 +115,7 @@ spacebars-compiler@1.1.0
 srp@1.0.10
 standard-minifier-css@1.3.3
 standard-minifier-js@1.2.2
-teamon:tinymce@4.3.13
+teamon:tinymce@4.5.4
 templating@1.3.0
 templating-compiler@1.3.0
 templating-runtime@1.3.0

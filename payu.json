@@ -1,0 +1,25 @@
+//
+/*POST /payments-api/4.0/service.cgi HTTP/1.1 
+Host: sandbox.api.payulatam.com
+Content-Type: application/json; charset=utf-8
+Accept: application/json
+Content-Length: length
+*/
+//
+{
+	"TIPO_DE_CUENTA": "Ahorro",
+	"Nombre": "Edwin Malaver Rivera",
+	"CEDULA": "80205606",
+	"NUMERO_CUENTA": "26819380685",
+	"PAYU":{
+		"test": false,
+	   	"language": "es",
+	   	"command": "GET_PAYMENT_METHODS",
+	   	"merchant": {
+	   		"apiKey": "23fIdTQ750nF6iK2I7s0MwFWNt",
+	    	"apiLogin": "jy3VojyHsx1UbtD",	    	
+	    	"llavePublica": "PK6cJ36D670p41T27ubbOR07wA",
+	    	"idComercio": "633295"
+   		}
+	}
+}

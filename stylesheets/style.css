@@ -176,13 +176,13 @@ a:hover, a:active{
   position: relative;
 }
 
-.menuContent p{
+.menuContent li{
   color: #222;
   margin: 20px 0;
   font-size: 1.7rem;
 }
 
-.menuContent p i{
+.menuContent li i{
   width: 30px
 }
 
@@ -963,3 +963,4 @@ iframe{
 #deleteFileButton{
   cursor: pointer;
 }
+

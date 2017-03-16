@@ -1,25 +1,17 @@
 Template.menu.onRendered(function() {
 	$('#menuOpen').pushmenu({ button : "#openMenuPerfil" });
 
-	$(".pm_close").draggable({
-		start: function() {
-			console.log("gfgdfg")
-		},
-	});
-
-	var template = this;
-	slideoutInstance = new Slideout({
-		'menu': template.$('.menuOpen').get(0),
-		'panel': $('.menuOpen').get(0),
-		'tolerance': 70
+	$(".menuOpen").draggable({
+		axis	: "x",
+		revert	: true,
+		revertDuration: 200,
+		start	: function(){
+			if($(".menuOpen").hasClass("pm_open")){
+				$(".menuOpen").removeClass("pm_open");
+				$(".pm_overlay").removeClass("pm_show");
+				$(".pm_overlay").addClass("pm_hide");
+			}
+		}
 	});
 
 });
-
-Template.menu.events(function(){
-	$(".pm_close").draggable({
-		start: function() {
-			console.log("gfgdfg")
-		},
-	});
-})

@@ -37,3 +37,5 @@ jQuery(document).ready(function($) {
     $(".delImage").remove();
   }, 1000);
 });
+
+/*Swiper menu*/
