@@ -1,9 +1,12 @@
 <template name="adminAll">
+
+  {{#if currentUser}}
+
   <div class="container-fluid panelAdmin">
     <div class="col-xs-12 col-sm-2 col-md-2 menu">
       <img class="img-responsive img-center center-block" src="img/logo.png">
       <ul>
-        <li><a href="{{pathFor 'publicarNoticia'}}" ><i class="icon-noticias"></i>Noticias</a></li>
+        <li><a href="#" ><i class="icon-noticias"></i>Noticias</a></li>
         <li><i class="icon-config"></i>Servicios</li>
         <li><i class="icon-geolocalizacion"></i>Geolocalización</li>
         <li><i class="icon-recreacionistas"></i>Recreacionistas</li>
@@ -14,13 +17,13 @@
     </div>
     <div class="col-xs-12 col-sm-10 col-md-10 stContent">
       <div class="col-xs-12 col-sm-12 col-md-12 barraNotificacion">
-        <!--<ul class="notificaciones col-xs-6 col-sm-6 col-md-6">
+        <ul class="notificaciones col-xs-6 col-sm-6 col-md-6">
           <li><i class="icon-alertas"></i>Notificación<span>2</span></li>
-        </ul>-->
+        </ul>
         <ul class="usuarios col-xs-6 col-sm-6 col-md-6">
           <li>
-            <img src="https://graph.facebook.com/{{currentUser.services.facebook.id}}/picture/?width=60" class="avatarAdmin">
-            <span>{{currentUser.services.facebook.name}}</span>
+            <i class="icon-usuario avatarAdmin"></i>
+            <span>{{currentUser.emails.address}}</span>
             <i class="icon-usuarioAdmin"></i>
           </li>
         </ul>
@@ -34,8 +37,20 @@
           Gracias por creer en <i class="icon-st2"></i>
         </p>
       </div>
-    </div>
-    
+    </div>    
   </div>
+
+  {{else}}
+  <div class="row">
+    <div class="col-xs-12 col-md-12 loginIn loginAdmin">
+      <img class="img-responsive img-center center-block" src="img/logo.png">
+      <h1>Administrador de Casper Recreación App</h1>
+      <div class="center-block containerLogin"> 
+        {{> atForm}}
+      </div>
+    </div>
+  </div>
+  {{/if}}
   
 </template>
+

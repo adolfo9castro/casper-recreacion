@@ -53,6 +53,11 @@ a:hover, a:active{
   width: 80%
 }
 
+.loginIn img.logoIn{
+  margin: 40px auto;
+  max-width: 70%;
+}
+
 .containerLogin input{
   background-color: transparent;
   border: 3px solid #fff;
@@ -270,7 +275,7 @@ a:hover, a:active{
   width: 50px;
 }
 
-.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus, input:focus {
   outline: none !important;
 }
 
@@ -964,3 +969,144 @@ iframe{
   cursor: pointer;
 }
 
+/*Login*/
+
+#at-facebook.at-social-btn{
+  background-color: #3b5998;
+  border-radius: 100px;
+  color: #fff !important;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 0 auto;
+  padding: 5px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  display: block;
+  width: 80%;
+  border: 1px solid transparent;
+}
+
+.at-input.has-feedback input{
+  background-color: transparent;
+  border: 3px solid #fff;
+  border-radius: 50px !important;
+  color: #fff;
+  margin: 20px auto !important;
+  width: 80%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  display: block;
+}
+
+.at-btn.submit{
+  background-color: #f6ac29;
+  color: #FFF;
+  border: medium none;
+  border-radius: 50px;
+  display: block;
+  font-family: "Rancho";
+  font-size: 25px;
+  margin: 0 auto;
+  padding: 0;
+  width: 34%;
+  margin-bottom: 10px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+}
+
+.at-title h3{
+  color: #FFF;
+  text-align: center;
+  margin: 20px 0
+}
+
+.at-sep{
+  margin: 10px 0 0;
+  color: #FFF;
+  text-align: center;
+}
+
+.at-pwd-link a{
+  text-align: center;
+  color: #FFF;
+  display: block;
+  margin-bottom: 20px
+}
+
+.at-pwd-form{
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  margin: 0px 0 10px;
+}
+
+.at-signup-link{
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+}
+
+.at-signup-link a{
+  color: #FFF;
+  font-weight: bold;
+}
+
+.at-error p{
+  color: #FFF;
+  text-align: center;
+  font-weight: bolder;
+  margin: 20px 0 0
+}
+
+.loginAdmin{
+  background-image: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loginAdmin h1{
+  text-align: center;
+  color: #FFF
+}
+
+.at-signin-link{
+  color: #FFF;
+  text-align: center;
+}
+.at-signin-link a{
+  color: #FFF;
+  font-weight: bold;
+}
+
+.loginAdmin #at-facebook, .loginAdmin .at-sep, .loginAdmin .at-signup-link{
+  display: none
+}
+
+.loginAdmin .containerLogin{
+  width: 500px
+}
+/*
+.fb_iframe_widget_fluid {
+    display: inline;
+    position: fixed!important;
+    z-index: 8;
+    top: 40px;
+    width: 100%;
+}*/
