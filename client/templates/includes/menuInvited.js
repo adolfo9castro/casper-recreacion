@@ -6,8 +6,7 @@
     fjs.parentNode.insertAfter(js, fjs);
 }(document, 'script', 'facebook-jssdk'));*/
 
-Template.menuInvited.onRendered(function(){
-	$(".pluginButtonIconSVG").remove();
+Template.menuInvited.events(function(){
 	var link = "https://play.google.com/store/apps/details?id=com.smarttree.recreacion.desarrollo";
 	var app_id = "1318056228245794";
 	window.open('fb-messenger://share?link=' + encodeURIComponent(link) + '&app_id=' + encodeURIComponent(app_id));
