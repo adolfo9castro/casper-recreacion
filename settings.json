@@ -17,8 +17,17 @@
       "permissions": [
         "public_profile",
         "email",
-        "user_friends"
-      ]
+        "user_friends",
+        "basic_info", 
+        "user_interests", 
+        "user_activities", 
+        "read_friendlists"
+      ],
+      "profileFields": [
+        "name",
+        "gender",
+        "location"
+      ]  
     }
   }
 }
