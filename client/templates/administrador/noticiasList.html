@@ -1,15 +1,24 @@
 <template name="noticiasList">
-  <ul class="noticias textoFinal">
-    {{#each posts}}
-      {{> postItem}}
-    {{/each}}
-
-    {{#if nextPath}}
-      <a class="load-more col-xs-12 col-sm-12 col-md-12" href="{{nextPath}}">Leer más noticias</a>
-      {{else}}
-        {{#unless ready}}
-          {{> spinner}}
-        {{/unless}}
-    {{/if}}
-  </ul>
+  <div class="contenedorNoticiasList">
+    <h2>Noticias</h2>
+    <div class="post-contentList col-xs-12 col-sm-12 col-md-12">
+      <div class="post col-xs-4 col-sm-4 col-md-4">
+        <h3>Título</h3>
+      </div>
+      <div class="post col-xs-4 col-sm-4 col-md-4">
+        <h3>Resumen</h3>
+      </div>
+      <div class="post col-xs-4 col-sm-4 col-md-4">
+        <h3 class="agregarNoticia"><a href="{{pathFor 'postPage'}}" >Agregar noticia</a></h3>
+      </div>
+    </div>
+    <ul class="noticias textoFinal">
+      {{#each posts}}
+        {{> postItemAdmin}}
+      {{/each}}
+      {{#unless ready}}
+        {{> spinner}}
+      {{/unless}}      
+    </ul>
+  </div>
 </template>

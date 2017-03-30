@@ -23,9 +23,19 @@ Template.menu.onRendered(function() {
 			}
     });
 
+    $("#openGeolocalizacion").on("click",function(){
+    	$(".containerGeolocalizacion").fadeIn();
+    	if($(".menuOpen").hasClass("pm_open")){
+				$(".menuOpen").removeClass("pm_open");
+				$(".pm_overlay").removeClass("pm_show");
+				$(".pm_overlay").addClass("pm_hide");
+			}
+    });
+    
     $(".avatar").on("click",function(){
     	$(".containerPerfil").fadeOut();
     });
+
 
     $("#cerrarGeolocalizacion").on("click",function(){
     	$(".containerGeolocalizacion").fadeOut();

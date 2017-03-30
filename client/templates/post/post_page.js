@@ -14,3 +14,15 @@ Template.postPage.onRendered(function() {
     });
 
 });
+
+
+Template.postItemAdmin.onRendered(function() {
+    $('.textoCompleto').each(function(){
+
+      var texto=$(this).text();
+     
+      $(this).html(texto);
+
+    });
+
+});
