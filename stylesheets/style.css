@@ -184,7 +184,18 @@ a:hover, a:active{
 .menuContent li{
   color: #222;
   margin: 20px 0;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+}
+
+.menuContent li span{
+  padding: 0px 0 0 10px;
+  position: relative;
+  display: inline-block;
+  top: -5px;
+}
+
+.menuContent ul{
+  margin-top: 20px 
 }
 
 .menuContent li i{
@@ -1110,3 +1121,90 @@ iframe{
     top: 40px;
     width: 100%;
 }*/
+
+.containerPerfil{
+  position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background-color: #FFF;
+    display: none
+}
+
+.containerPerfil .menuHeader {
+  min-height: 190px;
+    position: relative;
+}
+
+.containerPerfil .menuHeader .avatar{
+  display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    top: 110px;
+    padding: 0;
+
+}
+
+.containerPerfil .menuHeader .avatar img{
+  height: 100px;
+  width: 100px;
+  border: 2px solid #FFF
+}
+
+.containerPerfil .menuHeader h2{
+      text-align: center;
+    color: #000;
+    display: block;
+    position: relative;
+    top: 130px;
+    font-size: 2.5rem;
+}
+
+.containerPerfil .menuHeader p{
+    text-align: center;
+    color: #666;
+    display: block;
+    position: relative;
+    top: 120px;
+    font-size: 2rem;
+}
+
+.containerGeolocalizacion{
+  position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background-color: #FFF;
+    
+}
+
+.containerGeolocalizacion #map{
+  width: 100%;
+  height: 500px
+}
+
+.containerGeolocalizacion h4{
+  font-size: 2.7rem;
+  text-align: center;
+  color: #000;
+}
+
+.containerGeolocalizacion p{
+  text-align: center;
+ }
+
+.containerGeolocalizacion input#mapa1{
+  width: 100%;
+  border: none;
+}
+
+.containerGeolocalizacion #cerrarGeolocalizacion{
+      font-size: 2.3rem;
+    left: 10px;
+    position: absolute;
+    top: 15px;
+    color: #000;
+}

@@ -1,0 +1,16 @@
+<template name="geolocalizacionCrear">
+	<div class="containerGeolocalizacion">
+		<span id="cerrarGeolocalizacion"><i class="icon-cerrar2"></i></span>
+		<h4>¿Dónde será tu fiesta?</h4>
+		<p>Puedes arrastrar con los dedos el pin del mapa</p>
+		<form>
+			<input id="mapa1" type="text" name="place" placeholder="Ej: Belén, Medellín">		
+			<fieldset>				
+				<input name="lat" value="" type="hidden">
+				<input name="lng" value="" type="hidden">				
+			</fieldset>			
+		</form>
+		<div id="map"></div>
+
+	</div>
+</template>
