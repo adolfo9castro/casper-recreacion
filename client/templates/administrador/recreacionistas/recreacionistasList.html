@@ -1,0 +1,24 @@
+<template name="recreacionistasList">
+  <div class="contenedorNoticiasList recreacionistasList">
+    <h2>Recreacionistas</h2>
+    <div class="post-contentList col-xs-12 col-sm-12 col-md-12">
+      <div class="post col-xs-4 col-sm-4 col-md-4">
+        <h3>Título</h3>
+      </div>
+      <div class="post col-xs-4 col-sm-4 col-md-4">
+        <h3>Resumen</h3>
+      </div>
+      <div class="post col-xs-4 col-sm-4 col-md-4">
+        <h3 class="agregarRecreacionista"><a href="{{pathFor 'postPage'}}" >Agregar recreacionista</a></h3>
+      </div>
+    </div>
+    <ul class="recreacionistas textoFinal">
+      {{#each recreacionistas}}
+        {{> recreacionistas}}
+      {{/each}}
+      {{#unless ready}}
+        {{> spinner}}
+      {{/unless}}      
+    </ul>
+  </div>
+</template>

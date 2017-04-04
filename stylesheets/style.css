@@ -1284,6 +1284,16 @@ background: transparent;
   margin: 40px 0 20px
 }
 
-.contenedorPublicarNoticia{
+.contenedorPublicarNoticia, 
+.contenedorNoticiasList.serviciosList, 
+.contenedorPublicarServicio.publicarServicio,
+.contenedorNoticiasList.recreacionistasList,
+.contenedorPublicarRecreacionista.publicarRecreacionista,
+.contenedorClientesList.clientesList{
   display: none;
+}
+
+.containerClientesItem .post{
+  background-color: transparent;
+  box-shadow: none;
 }

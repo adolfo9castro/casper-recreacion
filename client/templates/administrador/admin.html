@@ -6,13 +6,13 @@
     <div class="col-xs-12 col-sm-2 col-md-2 menu">
       <img class="img-responsive img-center center-block" src="img/logo.png">
       <ul>
-        <li><a href="#" ><i class="icon-noticias"></i>Noticias</a></li>
-        <li><i class="icon-config"></i>Servicios</li>
-        <li><i class="icon-geolocalizacion"></i>Geolocalización</li>
-        <li><i class="icon-recreacionistas"></i>Recreacionistas</li>
-        <li><i class="icon-invitar"></i>Clientes</li>
+        <li class="listNoticias"><a href="#"><i class="icon-noticias"></i>Noticias</a></li>
+        <li class="listServicios"><a href="#"><i class="icon-config"></i>Servicios</a></li>
+        <!--<li class="listGeolocalizacion"><a href="#"><i class="icon-geolocalizacion"></i>Geolocalización</a></li>-->
+        <li class="listRecreacionistas"><a href="#"><i class="icon-recreacionistas"></i>Recreacionistas</a></li>
+        <li class="listClientes"><a href="#"><i class="icon-invitar"></i>Clientes</a></li>
         <br />
-        <li><i class="icon-enviar"></i>Cerrar menú</li>
+        <!--<li><i class="icon-enviar"></i>Cerrar menú</li>-->
       </ul>
     </div>
     <div class="col-xs-12 col-sm-10 col-md-10 stContent">
@@ -31,6 +31,16 @@
       <div class="row yield">
         {{> noticiasList}}
         {{> publicarNoticia}}
+
+        {{> serviciosList}}
+        {{> publicarServicio}}
+
+         {{> recreacionistasList}}
+        {{> publicarRecreacionista}}
+
+        {{> clientesList}}
+
+
 
       </div>
 

@@ -21,7 +21,7 @@ Template.geolocalizacionCrear.onRendered(function() {
     });
 	setTimeout(function(){
 	    $(".containerGeolocalizacion").css({"display":"none"})
-	}, 1100)
+	}, 1000)
 });
 
 
