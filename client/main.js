@@ -18,57 +18,6 @@ Meteor.startup(function() {
 Template.adminAll.onRendered(function() {
   $(".delImage").remove();
 
-  $(".agregarNoticia a").click(function(){
-	$(".contenedorNoticiasList").fadeOut("fast");
-	$(".contenedorPublicarNoticia").fadeIn("slow")
-  });
-
-  $(".listNoticias a").click(function(){
-	$(".contenedorPublicarNoticia").fadeOut("fast");
-	$(".contenedorNoticiasList").fadeIn("slow")
-  });
-
-  $(".listServicios a").click(function(){
-	$(".contenedorPublicarNoticia").fadeOut("fast");
-	$(".contenedorNoticiasList").fadeOut("fast");
-	$(".contenedorNoticiasList.serviciosList").fadeIn("slow")
-  });
-
-  $(".agregarServiciosList a").click(function(){
-	$(".contenedorPublicarNoticia").fadeOut("fast");
-	$(".contenedorNoticiasList").fadeOut("fast");
-	$(".contenedorNoticiasList.serviciosList").fadeOut("fast");
-	$(".contenedorPublicarServicio.publicarServicio").fadeIn("slow")
-  });
-
-	$(".listRecreacionistas a").click(function(){
-		$(".contenedorPublicarNoticia").fadeOut("fast");
-		$(".contenedorNoticiasList").fadeOut("fast");
-		$(".contenedorNoticiasList.serviciosList").fadeOut("fast");
-		$(".contenedorPublicarServicio.publicarServicio").fadeOut("fast");
-		$(".contenedorNoticiasList.recreacionistasList").fadeIn("slow");
-	  });
-
-	$(".agregarRecreacionista a").click(function(){
-		$(".contenedorPublicarNoticia").fadeOut("fast");
-		$(".contenedorNoticiasList").fadeOut("fast");
-		$(".contenedorNoticiasList.serviciosList").fadeOut("fast");
-		$(".contenedorPublicarServicio.publicarServicio").fadeOut("fast");
-		$(".contenedorNoticiasList.recreacionistasList").fadeOut("fast");
-		$(".contenedorPublicarRecreacionista.publicarRecreacionista").fadeIn("slow");
-	  });
-  
-
-	$(".listClientes a").click(function(){
-		$(".contenedorPublicarNoticia").fadeOut("fast");
-		$(".contenedorNoticiasList").fadeOut("fast");
-		$(".contenedorNoticiasList.serviciosList").fadeOut("fast");
-		$(".contenedorPublicarServicio.publicarServicio").fadeOut("fast");
-		$(".contenedorNoticiasList.recreacionistasList").fadeOut("fast");
-		$(".contenedorPublicarRecreacionista.publicarRecreacionista").fadeOut("fast");
-		$(".contenedorClientesList.clientesList").fadeIn("slow");
-	  });
-  
 
 });
 
