@@ -43,6 +43,8 @@ Template.menu.onRendered(function() {
 
     $("#salirPerfil").on("click",function(){
     	Meteor.logout()
-    }); 
+    });
+
+
 
 });
